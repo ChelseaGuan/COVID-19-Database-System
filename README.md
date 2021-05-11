@@ -9,9 +9,9 @@
         <li><a href="#development">Development</a></li>
         <li><a href="#built-with">Built With</a></li>
         <li>
-          <a href="#Tables">Tables</a>
+          <a href="#tables-in-covid19_phcs-database">Tables in covid19_phcs Database</a>
           <ul>
-            <li><a href="#map">Map</a></li>
+            <li><a href="#person">Person</a></li>
             <li><a href="#map-loader">Map Loader</a></li>
             <li><a href="#players">Players</a></li>
             <li><a href="#orders">Orders</a></li>
@@ -50,5 +50,33 @@ The database portion was built in DBeaver.
 
 ### Tables in the covid19_phcs database
 
+#### Alert
+The Alert table describes the four alert states: green, yellow, orange, red.
+
+#### Region
+The Region table maintains an alert history of alerts for a given region (e.g., Montreal, Monteregie, Laurentides, etc.).
+
+#### Address
+The Address table holds information such as house number, street name, city, etc. It also has field for the corresponding region. This way, 
+if the alert state for a region changes, all individuals with addresses belonging in that region can be notified.
+
 #### Person
+The Person table holds personal information for an individual such as first name, last name, medicare number, date of birth, email, etc.
+
+#### LivesAt
+The LivesAt table represents the relationship between a Person and their Address.
+
+#### IsParentOf
+
+
+
+
+
+
+
+
+
+
+
+
 
