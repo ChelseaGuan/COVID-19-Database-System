@@ -72,13 +72,6 @@ CREATE TABLE IsParentOf (
 	CHECK (parentId <> childId)
 );
 
-CREATE TABLE GroupZone (
-	personId int,
-	groupZoneName varchar(50),	# Assumption: groupZoneName is unique for each group zone.
-	isDeleted tinyint NOT NULL DEFAULT 0,
-	PRIMARY KEY (personId, groupZoneName),
-	FOREIGN KEY (personId) REFERENCES Person(id) ON DELETE CASCADE ON UPDATE CASCADE
-);
 
 CREATE TABLE PublicHealthWorker (
 	phwId int,
@@ -265,30 +258,6 @@ INSERT INTO IsParentOf (parentId, childId) VALUES (8, 11);
 INSERT INTO IsParentOf (parentId, childId) VALUES (9, 7);
 INSERT INTO IsParentOf (parentId, childId) VALUES (13, 12);
 INSERT INTO IsParentOf (parentId, childId) VALUES (16, 17);
-
-# GROUPZONE
-INSERT INTO GroupZone (personId, groupZoneName) VALUES (1, 'MontrealRBCBank_Group_1');
-
-INSERT INTO GroupZone (personId, groupZoneName) VALUES (3, 'MontrealRBCBank_Group_1');
-INSERT INTO GroupZone (personId, groupZoneName) VALUES (3, 'MontrealIGA_Group_1');
-INSERT INTO GroupZone (personId, groupZoneName) VALUES (4, 'MontrealCAEOffice_Group_1');
-INSERT INTO GroupZone (personId, groupZoneName) VALUES (5, 'MontrealPrimaryGrade6_Group_1');
-INSERT INTO GroupZone (personId, groupZoneName) VALUES (6, 'MontrealPrimaryGrade1_Group_1');
-
-INSERT INTO GroupZone (personId, groupZoneName) VALUES (7, 'MontrealPETAirport_Group_1');
-INSERT INTO GroupZone (personId, groupZoneName) VALUES (8, 'MontrealPETAirport_Group_1');
-INSERT INTO GroupZone (personId, groupZoneName) VALUES (9, 'BrossardLibrary_Group_1');
-INSERT INTO GroupZone (personId, groupZoneName) VALUES (10, 'BrossardPrimaryGrade1_Group_1');
-INSERT INTO GroupZone (personId, groupZoneName) VALUES (11, 'BrossardPrimaryGrade1_Group_2');
-
-INSERT INTO GroupZone (personId, groupZoneName) VALUES (12, 'MontrealConcordiaBioLab_Group_1');
-INSERT INTO GroupZone (personId, groupZoneName) VALUES (12, 'MontrealIGA_Group_1');
-INSERT INTO GroupZone (personId, groupZoneName) VALUES (13, 'MontrealRBCBank_Group_1');
-
-INSERT INTO GroupZone (personId, groupZoneName) VALUES (14, 'MontrealMcGillRowingClub_Group_1');
-INSERT INTO GroupZone (personId, groupZoneName) VALUES (15, 'LongueuilEconofitness_Group_1');
-
-INSERT INTO GroupZone (personId, groupZoneName) VALUES (16, 'MountRoyalStarbucks_Group_1');
 
 
 # PUBLIC HEALTH WORKER

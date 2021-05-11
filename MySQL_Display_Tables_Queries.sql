@@ -35,13 +35,6 @@ FROM IsParentOf
 INNER JOIN Person p ON IsParentOf.parentId = p.id
 INNER JOIN Person c ON IsParentOf.childId = c.id;
 
-# GROUPZONE
-SELECT * 
-FROM GroupZone;
-SELECT Person.firstName, Person.lastName, GroupZone.groupZoneName 
-FROM Person, GroupZone
-WHERE Person.id = GroupZone.personId
-ORDER BY GroupZone.groupZoneName, Person.lastName, Person.firstName;
 
 # PUBLIC HEALTH WORKER
 SELECT *
@@ -205,28 +198,4 @@ SELECT *
 FROM Region 
 WHERE alertDate BETWEEN '2020-12-15' AND '2021-02-04' AND isDeleted=0
 ORDER BY alertDate;
-
-
-
-
-
-
-
-SET FOREIGN_KEY_CHECKS=0;
-DROP TABLE Alert;
-DROP TABLE Region;
-DROP TABLE Address;
-DROP TABLE Person;
-DROP TABLE LivesAt;
-DROP TABLE IsParentOf;
-DROP TABLE GroupZone;
-DROP TABLE PublicHealthWorker;
-DROP TABLE PublicHealthCenter;
-DROP TABLE WorksAt;
-DROP TABLE Diagnosis;
-DROP TABLE HealthRecommendations;
-DROP TABLE Messages;
-DROP TABLE Symptoms;
-DROP TABLE SymptomsHistory;
-SET FOREIGN_KEY_CHECKS=1;
 
