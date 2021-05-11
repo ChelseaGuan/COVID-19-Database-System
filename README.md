@@ -7,8 +7,9 @@
       <a href="#about-the-project">About the Project</a>
       <ol>
         <li><a href="#development">Development</a></li>
+        <li><a href="#built-with">Built With</a></li>
         <li>
-          <a href="#features">Features</a>
+          <a href="#Tables">Tables</a>
           <ul>
             <li><a href="#map">Map</a></li>
             <li><a href="#map-loader">Map Loader</a></li>
