@@ -11,11 +11,12 @@
         <li>
           <a href="#tables-in-covid19_phcs-database">Tables in covid19_phcs Database</a>
           <ul>
+            <li><a href="#alert">Alert</a></li>
+            <li><a href="#region">Region</a></li>
+            <li><a href="#address">Address</a></li>
             <li><a href="#person">Person</a></li>
-            <li><a href="#map-loader">Map Loader</a></li>
-            <li><a href="#players">Players</a></li>
-            <li><a href="#orders">Orders</a></li>
-            <li><a href="#game-engine">Game Engine</a></li>
+            <li><a href="#livesAt">LivesAt</a></li>
+
           </ul>
         </li>
       </ol>
