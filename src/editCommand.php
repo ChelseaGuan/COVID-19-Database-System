@@ -34,13 +34,6 @@ class EditCommand extends AbstractCommand {
                                 SET " . $this->args[0] . "='" . $this->args[1] . 
                                 "' WHERE " . $this->where . " AND Person.id = PublicHealthWorker.phwId AND PublicHealthWorker.phwId = WorksAt.phwId;";
                     break;
-
-                case "GroupZone":
-            
-                    $query = "UPDATE Person, GroupZone
-                                SET " . $this->args[0] . "='" . $this->args[1] . 
-                                "' WHERE " . $this->where . " AND Person.id = GroupZone.personId;";
-                    break;
     
 
                 default:

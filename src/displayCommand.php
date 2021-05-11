@@ -55,25 +55,7 @@ class DisplayCommand extends AbstractCommand {
                       }
                 break;
 
-                case "GroupZone":
-                    $query = "SELECT Person.firstName, Person.lastName, GroupZone.groupZoneName 
-                                FROM Person, GroupZone
-                                WHERE Person.id = GroupZone.personId
-                                ORDER BY GroupZone.groupZoneName, Person.lastName, Person.firstName;";
-                    $result = $conn->query($query);
-                    if ($result->num_rows > 0) {
-                        // Output data of each row.
-                        while($row = $result->fetch_assoc()) {
-                          echo "firstName: " . $row["firstName"] . " | lastName: " . $row["lastName"] .
-                          " | groupZoneName: " . $row["groupZoneName"] . "<br>";
-                        }
-                    } 
-                    else {
-                        echo "0 results";
-                      }
-                break;
-
-
+                
                 // The other tables can be displayed as is.
                 default:
                     // Obtain column names.
