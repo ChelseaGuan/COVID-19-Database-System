@@ -16,6 +16,14 @@
             <li><a href="#address">Address</a></li>
             <li><a href="#person">Person</a></li>
             <li><a href="#livesAt">LivesAt</a></li>
+            <li><a href="#publicHealthWorker">PublicHealthWorker</a></li>
+            <li><a href="#publicHealthCenter">PublicHealthCenter</a></li>
+            <li><a href="#worksAt">WorksAt</a></li>
+            <li><a href="#diagnosis">Diagnosis</a></li>
+            <li><a href="#messages">Messages</a></li>
+            <li><a href="#healthRecommendations">HealthRecommendations</a></li>
+            <li><a href="#symptoms">Symptoms</a></li>
+            <li><a href="#symptomsHistory">SymptomsHistory</a></li>
           </ul>
         </li>
       </ol>
@@ -61,22 +69,42 @@ The Address table holds information such as house number, street name, city, etc
 if the alert state for a region changes, all individuals with addresses belonging in that region can be notified.
 
 #### Person
-The Person table holds personal information for an individual such as first name, last name, medicare number, date of birth, email, etc.
+The Person table holds personal information for an individual such as ID, first name, last name, medicare number, date of birth, email, etc.
 
 #### LivesAt
-The LivesAt table represents the relationship between a Person and their Address.
+The LivesAt table represents the relationship between a person and their address.
 
 #### IsParentOf
-The IsParentOf table represents the relationship between two Person entities, a child and their parent.
+The IsParentOf table represents the relationship between two people, a child and their parent.
+
+#### PublicHealthWorker
+The PublicHealthWorker table contains the IDs of all people who are also public health workers.
+
+#### PublicHealthCenter
+The PublicHealthCenter table holds information on facilities such as ID, name, phone number, type (hospital, clinic or special installment), etc.
+
+#### WorksAt
+The WorksAt table represents the relationship between public health centers and the public health workers it employs. A public health center can 
+hire more than one worker and a worker can work for more than one center.  
+
+#### Diagnosis
+The Diagnosis table holds information regarding a COVID test which includes the the person tested, the public health center at which the test 
+took place, the public health worker who performed the test, the test result (positive or negative) and relevant dates.
+
+#### Messages
+The Messages table simulates an email service. It contains information such as date, region, first and last name of the person receiving the message, 
+email, message description, etc.
+For instance, when a region's alert state changes, a message is added for each person who lives in that region informing them of the change and
+of the new guidelines that come with it. Furthermore, when someone gets a diagnosis (be it positive or negative), a message is added for that person.
+Inserting into the Messages table is accomplished through SQL triggers.
+
+#### HealthRecommendations
 
 
+#### Symptoms
 
 
-
-
-
-
-
+#### SymptomsHistory
 
 
 
