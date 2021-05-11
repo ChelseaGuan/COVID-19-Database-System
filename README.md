@@ -16,7 +16,6 @@
             <li><a href="#address">Address</a></li>
             <li><a href="#person">Person</a></li>
             <li><a href="#livesAt">LivesAt</a></li>
-
           </ul>
         </li>
       </ol>
@@ -68,6 +67,7 @@ The Person table holds personal information for an individual such as first name
 The LivesAt table represents the relationship between a Person and their Address.
 
 #### IsParentOf
+The IsParentOf table represents the relationship between two Person entities, a child and their parent.
 
 
 
