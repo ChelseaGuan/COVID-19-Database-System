@@ -9,7 +9,7 @@
         <li><a href="#development">Development</a></li>
         <li><a href="#built-with">Built With</a></li>
         <li>
-          <a href="#tables-in-covid19_phcs-database">Tables in covid19_phcs Database</a>
+          <a href="#tables-in-the-covid19_phcs-database">Tables in covid19_phcs Database</a>
           <ul>
             <li><a href="#alert">Alert</a></li>
             <li><a href="#region">Region</a></li>
@@ -57,6 +57,8 @@ The database portion was built in DBeaver.
 
 
 ### Tables in the covid19_phcs database
+The MySQL code to create tables and triggeres and populate tables is provided in MySQL_Create_Tables_Triggers.sql.
+The MySQL code to perform queries is provided in MySQL_Display_Tables_Queries.sql.
 
 #### Alert
 The Alert table describes the four alert states: green, yellow, orange, red.
@@ -113,5 +115,6 @@ completed by the person on the web application.
    
    
 ## Web Application
+![Registration Empty Textbox Warning](images/RegistrationEmptyTBWarning.gif)  
 
 
