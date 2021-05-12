@@ -124,14 +124,27 @@ completed by the person on the web application.
    
 Initially, the Messages table is empty and the Region table only has two entries.   
 ![Inital Empty Messages Table](images/initalEmptyMessages.gif)  
-
+   
 An alert can only be upgraded or downgraded one level at a time. Since we tried to set Montreal's new alert state as 3 when it used to be 1, an 
 error message is displayed.   
 ![Alert State Check](images/alertStateCheck.gif)  
-
+   
 Setting a new alert state of 2 works however. After changing the alert state, the system notfies all individuals living in that region (Montreal).
 This process is simulated using the Messages table which now has an entry for each person living in Montreal.   
 ![New Alert Messages](images/newAlertMessages.gif)  
 
 
 ### Symptoms Form Demo
+
+To fill in the COVID-19 symptoms form, the user must first login using their medicare number and date of birth.   
+![Symptoms Form Login](images/symptomsForm1.gif)  
+   
+After testing positive for COVID-19, the individual must fill up the symptoms form for the fourteen consecutive days following the diagnosis.
+![Fill in Form](images/symptomsForm2.gif)  
+
+Since conjunctivitis is a new symptom, the system adds it to its database in the Symptoms table under 'non-listed'.
+![Submit and Update Symptoms and SymptomsHistory Tables](images/symptomsForm3.gif)  
+
+The SymptomsHistory now has an entry for the person that just filled in the form.
+![New SymptomsHistory Table](images/newSymptomsHistory.png)  
+
