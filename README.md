@@ -146,5 +146,5 @@ Since conjunctivitis is a new symptom, the system adds it to its database in the
 ![Submit and Update Symptoms and SymptomsHistory Tables](images/symptomsForm3.gif)  
 
 The SymptomsHistory now has an entry for the person that just filled in the form.
-![New SymptomsHistory Table](images/newSymptomsHistory.png)  
+![New SymptomsHistory Table](images/newSymptomsHistory.PNG)  
 
