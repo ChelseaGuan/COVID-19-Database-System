@@ -29,7 +29,7 @@
       </ol>
     </li>
     <li>
-      <a href="#sample-output">Sample Output</a>
+      <a href="#web-application">Web Application</a>
     </li>
   </ul>
 </details>  
@@ -99,13 +99,19 @@ of the new guidelines that come with it. Furthermore, when someone gets a diagno
 Inserting into the Messages table is accomplished through SQL triggers.
 
 #### HealthRecommendations
-
+The HealthRecommendations table contains instructions that a self-isolating individual is asked to follow to prevent the spread of COVID-19.
 
 #### Symptoms
-
+The Symptoms table documents the known symptoms of COVID-19 classified under three categories: main, other, non-listed. Whenever an infected person 
+is diagnosed with symptoms not yet recorded in the database, the system updates the table to include these new symptoms. This is done through a form
+completed by the person on the web application.
 
 #### SymptomsHistory
-
-
+The SymptomsHistory table maintains two weeks of symptom history for people who are diagnosed positive for COVID-19. This is done through a form 
+completed by the person on the web application.
+   
+   
+   
+## Web Application
 
 
