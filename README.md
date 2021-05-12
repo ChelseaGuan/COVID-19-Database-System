@@ -33,6 +33,7 @@
       <ol>
         <li><a href="#alert-state-change-trigger-demo">Alert State Change Trigger Demo</a></li>
         <li><a href="#symptoms-form-demo">Symptoms Form Demo</a></li>
+        <li><a href="#various-queries">Various Queries</a></li>
       <ol>
     </li>
   </ul>
@@ -148,3 +149,8 @@ Since conjunctivitis is a new symptom, the system adds it to its database in the
 The SymptomsHistory now has an entry for the person that just filled in the form.
 ![New SymptomsHistory Table](images/newSymptomsHistory.PNG)  
 
+
+### Various Queries
+In MySQL_Display_Tables_Queries.sql, there is a list of queries that demonstrate the how our relational database can be used to obtain information.
+Ex.: Query 11. Give a list of all the people in a specific address. For every person, provide the their personal information and their parents' full names.
+![Query 11](images/query11.PNG)  
