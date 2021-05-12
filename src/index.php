@@ -5,10 +5,7 @@ include_once("dbConnection.php");
 <html>
 
 <body>
-
-    <h1>COMP 353 Project</h1>
-
-    <h4>Connect to database tdc353_4</h4>
+    <h2>Connect to database covid19_phcs</h2>
 
     <form method="post">
         <input type="submit" name="connectButton" value="Connect" />
@@ -17,8 +14,7 @@ include_once("dbConnection.php");
     
     <?php
     if (isset($_POST["connectButton"])) {
-        echo '<script>window.location = "./db.php" </script>';   // https://tdc353.encs.concordia.ca/db.php for web server
-        
+        echo '<script>window.location = "./db.php" </script>';          
     }
     
     ?>

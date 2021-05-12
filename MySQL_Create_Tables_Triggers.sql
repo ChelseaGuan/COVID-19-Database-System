@@ -307,7 +307,7 @@ INSERT INTO WorksAt (phwId, phcId, startDateTime, endDateTime) VALUES (3, 1, '20
 INSERT INTO Diagnosis (personId, testDate, phcId, phwId, testResult, testResultDate) VALUES (1, '2020-12-12', 1, 3, 'negative', '2020-12-15');	# John Doe is getting a disgnosis done by Roger Macdonald at Viau Public Health Center
 INSERT INTO Diagnosis (personId, testDate, phcId, phwId, testResult, testResultDate) VALUES (2, '2020-12-19', 1, 8, 'negative', '2020-12-22');	# Viau Public Health Center
 INSERT INTO Diagnosis (personId, testDate, phcId, phwId, testResult, testResultDate) VALUES (9, '2020-12-20', 10, 14, 'negative', '2020-12-23');	# Clinique Globuline
-INSERT INTO Diagnosis (personId, testDate, phcId, phwId, testResult, testResultDate) VALUES (3, '2021-01-07', 2, 2, 'positive', '2021-01-10');	# Lakeshore General Hospital
+INSERT INTO Diagnosis (personId, testDate, phcId, phwId, testResult, testResultDate) VALUES (3, '2021-05-07', 2, 2, 'positive', '2021-05-10');	# Lakeshore General Hospital
 INSERT INTO Diagnosis (personId, testDate, phcId, phwId, testResult, testResultDate) VALUES (4, '2021-01-07', 2, 2, 'positive', '2021-01-10');	# Lakeshore General Hospital
 INSERT INTO Diagnosis (personId, testDate, phcId, phwId, testResult, testResultDate) VALUES (5, '2021-01-07', 2, 2, 'negative', '2021-01-10');	# Lakeshore General Hospital
 INSERT INTO Diagnosis (personId, testDate, phcId, phwId, testResult, testResultDate) VALUES (6, '2021-01-07', 2, 2, 'negative', '2021-01-10');	# Lakeshore General Hospital

@@ -50,7 +50,7 @@ class FollowUpCommand extends AbstractCommand {
                         medicareNumber: ". $row["medicareNumber"] . "\t|\tPhone Number: ". $row["phoneNumber"] . "\t|\tCitizenship: ". $row["citizenship"] ."\t|\tEmail: ". $row["email"]."<br /></p>";
                     }
                 }
-                //Query to check if there's positive active (within past 14 days) diagnosis 
+                // Query to check if there is a positive active (within past 14 days) diagnosis 
                 $today = date_create();
                 $min_date_temp = date_sub($today, date_interval_create_from_date_string('14 days'));
                 $min_date = date_format($min_date_temp, 'Y-m-d');
