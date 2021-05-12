@@ -30,6 +30,10 @@
     </li>
     <li>
       <a href="#web-application">Web Application</a>
+      <ol>
+        <li><a href="#alert-state-change-trigger-demo">Alert State Change Trigger Demo</a></li>
+        <li><a href="#symptoms-form-demo">Symptoms Form Demo</a></li>
+      <ol>
     </li>
   </ul>
 </details>  
@@ -115,6 +119,19 @@ completed by the person on the web application.
    
    
 ## Web Application
-![Registration Empty Textbox Warning](images/RegistrationEmptyTBWarning.gif)  
+
+### Alert State Change Trigger Demo
+   
+Initially, the Messages table is empty and the Region table only has two entries.   
+![Inital Empty Messages Table](images/initalEmptyMessages.gif)  
+
+An alert can only be upgraded or downgraded one level at a time. Since we tried to set Montreal's new alert state as 3 when it used to be 1, an 
+error message is displayed.   
+![Alert State Check](images/alertStateCheck.gif)  
+
+Setting a new alert state of 2 works however. After changing the alert state, the system notfies all individuals living in that region (Montreal).
+This process is simulated using the Messages table which now has an entry for each person living in Montreal.   
+![New Alert Messages](images/newAlertMessages.gif)  
 
 
+### Symptoms Form Demo
