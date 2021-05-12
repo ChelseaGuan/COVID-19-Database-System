@@ -45,11 +45,6 @@ Worked collaboratively in a team of three developers via Github to develop a dat
 System (covid19_phcs). A graphic user interface was also provided to make it easier for users to interact with the system.
 The goal of the application was to help the public health administration monitor and control the spread of COVID-19.
 
-The application must maintain personal information about the population involved in the
-pandemic whether infected or not, information about Public Health workers involved in
-the PCR tests (Polymerase Chain Reaction tests), information about Public Health
-facilities where the PCR tests are performed, and the diagnostic results. 
-
 ### Development
 This web application portion of the project was developed in Microsoft's Visual Studio Code. 
 The database portion was built in DBeaver.
