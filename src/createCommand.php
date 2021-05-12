@@ -7,7 +7,7 @@ class CreateCommand extends AbstractCommand {
         $conn = $dbConn->getConn();
         
         // Check if table exists
-        $queryTableExists = "SELECT * FROM INFORMATION_SCHEMA.tables WHERE TABLE_SCHEMA = 'tdc353_4' AND TABLE_NAME = '" . $this->tableName . "';";
+        $queryTableExists = "SELECT * FROM INFORMATION_SCHEMA.tables WHERE TABLE_SCHEMA = 'covid19_phcs' AND TABLE_NAME = '" . $this->tableName . "';";
         $resultTableExists = $conn->query($queryTableExists);
         if ($resultTableExists->num_rows == 0) {
             echo "The table does not exist.";

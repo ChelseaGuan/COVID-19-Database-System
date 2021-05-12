@@ -43,7 +43,7 @@ include("displayCommand.php");
         </div>
         <div id="follow-up-form" class="tab-pane fade in">
             <h2>Follow-up Form</h2>
-            <p>Please input the medicare number of the person and his/her date of birth [ddmmyyyy]</p>
+            <p>Please input the medicare number of the person and his/her date of birth [yyyy-mm-dd]</p>
             <form method="post" id="follow-up">
                 Medicare Number: <input type="text" name="medicare-number" placeholder="AAAA 0000 0000" value="">
                 <br/><br/>
