@@ -151,6 +151,7 @@ The SymptomsHistory now has an entry for the person that just filled in the form
 
 
 ### Various Queries
-In MySQL_Display_Tables_Queries.sql, there is a list of queries that demonstrate the how our relational database can be used to obtain information.
+In MySQL_Display_Tables_Queries.sql, there is a list of queries that demonstrate the how our relational database can be used to obtain information.   
+
 Ex.: Query 11. Give a list of all the people in a specific address. For every person, provide the their personal information and their parents' full names.
 ![Query 11](images/query11.PNG)  
