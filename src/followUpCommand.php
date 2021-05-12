@@ -55,11 +55,11 @@ class FollowUpCommand extends AbstractCommand {
                 $min_date_temp = date_sub($today, date_interval_create_from_date_string('14 days'));
                 $min_date = date_format($min_date_temp, 'Y-m-d');
                 // To uncomment: 
-                //$queryDiagnosis = "SELECT * FROM Diagnosis WHERE  personId ='" . $personId ."' AND testResult = 'positive' AND testResultDate >='"  . $min_date . "';";
-                $queryDiagnosis = "SELECT * FROM Diagnosis WHERE  personId ='" . $personId ."' LIMIT 1;";
+                $queryDiagnosis = "SELECT * FROM Diagnosis WHERE  personId ='" . $personId ."' AND testResult = 'positive' AND testResultDate >='"  . $min_date . "';";
+                //$queryDiagnosis = "SELECT * FROM Diagnosis WHERE  personId ='" . $personId ."' LIMIT 1;";
                 $resultDiagnosis = $conn->query($queryDiagnosis);
                 if ($resultDiagnosis->num_rows == 0) {
-                    echo "No positive test results within the past 14 days for this person ...<br />";
+                    echo "No positive test results within the past 14 days for this person.<br />";
                 }
                 else {
                     // Obtain column names.

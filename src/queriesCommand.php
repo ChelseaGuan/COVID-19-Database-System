@@ -129,7 +129,6 @@ class QueriesCommand extends AbstractCommand {
                     ) AS phwList) AS phwCount, phc.methodOfTesting, IF(phc.drivethru=1, 'Available', 'Unavailable') AS 'Drive thru'
                 FROM PublicHealthCenter phc
                 WHERE phc.isDeleted = 0;";
-                echo $query;
                 $result = $conn->query($query);
             
                 if ($result->num_rows > 0) {
@@ -241,7 +240,7 @@ class QueriesCommand extends AbstractCommand {
                                 WHERE Diagnosis.testResult = 'positive' and Diagnosis.testResultDate = '". $this->args[0] ."' and  PublicHealthCenter.phcName = '". $this->args[1] ."';";
                 $resultFirstQuery = $conn->query($firstQuery);
                 
-                //Second Query
+                // Second Query
                 $today = date_create($this->args[0]);
                 $min_date_temp = date_sub($today, date_interval_create_from_date_string('14 days'));
                 $min_date = date_format($min_date_temp, 'Y-m-d');
@@ -276,7 +275,7 @@ class QueriesCommand extends AbstractCommand {
                 break;
 
             case "17": // Example args input format: 2020-12-15; 2021-02-04
-                echo "17. <br/>(1)For all regions, provide a report that include the region name, the number
+                echo "17. <br/>(1) For all regions, provide a report that include the region name, the number
                 of people who have positive results, the number of people who have
                 negative results and a (2) history of alerts within a specific period-of-time.<br/>";
                 
