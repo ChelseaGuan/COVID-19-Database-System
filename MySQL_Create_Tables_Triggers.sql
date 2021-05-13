@@ -2,6 +2,11 @@
 # MySQL code for creating tables and triggers and populating tables
 
 
+CREATE DATABASE IF NOT EXISTS covid19_PHCS;
+
+USE covid19_PHCS;
+
+
 -- CREATING RELATIONS (DDL)
 
 CREATE TABLE Alert (
